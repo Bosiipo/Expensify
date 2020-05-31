@@ -15,6 +15,7 @@ export const startAddExpense = (expenseData = {}) => {
             amount = 0, 
             createdAt = 0 
         } = expenseData;
+
         const expense = { description, note, amount, createdAt };
 
         return database.ref('expenses').push(expense).then((ref) => {
@@ -22,6 +23,7 @@ export const startAddExpense = (expenseData = {}) => {
                 id: ref.key,
                 ...expense
             }));
+            console.log(expense);
         });
     };
 };
