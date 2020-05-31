@@ -29,7 +29,7 @@
     "enzyme-to-json": "^3.0.1",
     "express": "^4.17.1",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
-    "firebase": "^4.2.0",
+    "firebase": "7.14.6",
     "identity-obj-proxy": "3.0.0",
     "jest": "^20.0.4",
     "live-server": "^1.2.1",
@@ -58,5 +58,7 @@
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "chokidar": "^3.4.0"
+  }
 }
